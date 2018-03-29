@@ -31,6 +31,12 @@ $(document).ready(function(){
     $(function(){
         $("#contact-form").validate();
     });
+
+    // toggle overlay of projects
+    $('.project').hover(function(){
+        $(this).find('.project-overlay').slideToggle();
+        $(this).find('.category').slideToggle();
+    });
     
 });
 
